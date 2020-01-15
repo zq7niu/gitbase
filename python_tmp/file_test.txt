@@ -1,0 +1,6 @@
+Git is a version control system.
+Git is free software.
+let's study it together.
+this relation to branch dev.
+this relation to branch python/dev.
+
