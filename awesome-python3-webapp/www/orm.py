@@ -232,7 +232,7 @@ class ModelMetaclass(type):
 
                     if primaryKey:
 
-                        raise StandardError('Duplicate primary key for field: %s' % k)
+                        raise Exception('Duplicate primary key for field: %s' % k)
 
                     primaryKey = k
 
@@ -242,7 +242,7 @@ class ModelMetaclass(type):
 
         if not primaryKey:
 
-            raise StandardError('Primary key not found.')
+            raise Exception('Primary key not found.')
 
         for k in mappings.keys():
 
